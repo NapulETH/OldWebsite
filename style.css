@@ -1,0 +1,168 @@
+
+body {
+    background-color: black;
+    color: #6dbffd;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    line-height: 1.6;
+}
+h2,h2,h3{
+    font-size:28px;
+}
+a:link {
+    color: #a7d9ff;
+}
+a:visited {
+    color: #a7d9ff;
+}
+code, .code {
+    font-size: 85%;
+    color:#a7d9ff;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.icon, .navBar { background-color:#000000!important; }
+
+.icon { 
+    height: 32px;
+    padding: 8px 16px;
+    vertical-align:middle;
+    display:block; 
+    float: right;
+}
+
+.icon:hover {
+    background-color:#dfdfdf!important
+}
+
+.navBar { 
+    height: 48px;
+    display:none; 
+}
+
+#toggleNavBar { display: none;}
+#toggleNavBar:checked ~ .navBar { display: block;}
+@media (max-width:800px){ .ascii{font-size: 8px;}}
+@media (max-width:700px){ .ascii{font-size: 7px;}}
+@media (max-width:600px){ .ascii{font-size: 6px;}}
+@media (max-width:500px){ .ascii{font-size: 5px;}}
+@media (max-width:400px){ .ascii{font-size: 4px;}}
+@media (max-width:300px){ .ascii{font-size: 3px;}}
+@media (min-width:800px){ .ascii{font-size: 9px;}}
+
+.flag{
+    width:45px;
+    height:30px;
+    overflow:hidden;
+    border:1px solid #efefef
+}
+
+.italy{
+    background:linear-gradient(
+        90deg,
+        #009246 33.33333%,
+        #fff 33.33333%,
+        #fff 66.66667%,
+        #ce2b37 66.66667%
+    );
+}
+
+.naples{
+    background:linear-gradient(
+        90deg,
+        #fed400 50%,
+        #ce2b37 50%
+    );
+}
+
+.the-united-kingdom{
+    background:#00247d;
+    background-size:100px 100px;
+    position:relative
+}
+
+.the-united-kingdom:before{
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    background:linear-gradient(
+            180deg,
+            transparent 40%,
+            #cc142b 0,
+            #cc142b 60%,
+            transparent 0
+        ),
+        linear-gradient(
+            90deg,
+            transparent 45%,
+            #cc142b 0,
+            #cc142b 55%,
+            transparent 0
+        ),
+        linear-gradient(
+            180deg,
+            transparent 35%,
+            #fff 0,
+            #fff 65%,
+            transparent 0
+        ),
+        linear-gradient(
+            90deg,
+            transparent 40%,
+            #fff 0,
+            #fff 60%,
+            transparent 0
+        ),
+        linear-gradient(
+            146deg,
+            transparent 50%,
+            #cc142b 0,
+            #cc142b 53%,
+            transparent 0
+        ) -65px 45px,
+        linear-gradient(
+            146deg,
+            transparent 50%,
+            #cc142b 0,
+            #cc142b 53%,
+            transparent 0
+        ) 55px -45px,
+        linear-gradient(
+            34deg,
+            transparent 50%,
+            #cc142b 0,
+            #cc142b 53%,
+            transparent 0
+        ) -75px -43px,
+        linear-gradient(
+            34deg,
+            transparent 50%,
+            #cc142b 0,
+            #cc142b 53%,
+            transparent 0
+        ) 70px 46px,
+        linear-gradient(
+            146deg,
+            transparent 45%,
+            #fff 0,
+            #fff 55%,
+            transparent 0
+        ),
+        linear-gradient(
+            34deg,
+            transparent 45%,
+            #fff 0,
+            #fff 55%,
+            transparent 0
+        );
+    width:45px;
+    height:30px;
+    background-repeat:no-repeat
+}
