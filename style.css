@@ -7,7 +7,6 @@
   src: url('./fonts/cooper-black-webfont.woff');
 }
 
-
 body {
     background-image: url('./assets/background.png');
 	background-repeat: no-repeat;
@@ -17,30 +16,33 @@ body {
 	font-family: cooper-black;
     font-size: 20px;
     line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
  h1,h2,h3{ 
     /* font-size:28px; */
 	font-family: cooper-black;
 	color: #ca75ab;
 	margin: 20px 0;
  }
-/* a:link { */
-    /* color: #a7d9ff; */
-/* } */
-/* a:visited { */
-    /* color: #a7d9ff; */
-/* } */
+
 code, .code {
     font-size: 75%;
     color:#518dca;
 	font-family: tan-pearl;
 }
+
 footer {
-	display: flex;
+	align-items: center;
+    display: flex;
 	background: #eddb55;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+    background: #eddb55;
 }
 
 img {
@@ -69,14 +71,13 @@ b{
 }
 
 
-.navLinks {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	color: #518dca;
+a {
+    color: #518dca;
 }
 
 .navAdress {
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 	padding: 5px 20px;
 	text-align: center;
@@ -103,6 +104,12 @@ b{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    position:fixed; 
+    width:100%; 
+    z-index:1; 
+    top:0; 
+    left:0; 
+    padding:unset;
 }
 
 .staticImg{width: 50%;}
