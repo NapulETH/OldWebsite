@@ -5,131 +5,178 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./style.css">
         <title>NapulETH</title>
     </head>
 
     <body>
-        <!-- Language Selection -->
-        <div style="position:fixed;width:100%;z-index:1;top:0;">
-            <input type="checkbox" id="toggleNavBar"/>
-            <label class="toggleNavBar" for="toggleNavBar">
-                    <i class="icon fa fa-language" style="font-size: 36px;">        
-                    </i>
-            </label>
+        <!-- Navigation Bar -->
+        <div class="w3-container" style="position:fixed; width:100%; z-index:1; top:0; padding:unset;">
             
             <div class="navBar">
-                <a href="./index-nap.html" class="icon">
-                    <div class="flag naples"></div>
-                </a>
-                <a href="./index-ita.html" class="icon">
-                    <div class="flag italy"></div>
-                </a>
-                <a href="./index.html" class="icon">
-                    <div class="flag the-united-kingdom"></div>
-                </a>    
+				<a href="./index-ita.html" style="text-decoration: none;">
+					<code style="margin: 10px;">NapulETH</code>
+				</a>
+				<div class="navLinks">
+					<a href="./index-ita.html" class="navAdress" style="color: #ca75ab;">
+						Home
+					</a>
+					<!-- <a href="./events-ita.html" class="navAdress"> -->
+						<!-- Eventi Passati -->
+					<!-- </a>			 -->
+					<a href="./about-ita.html" class="navAdress">
+						Chi Siamo
+					</a>
+				</div>
+				<div style="margin: 10px; align-self: center;">
+					<a href="./index-ita.html" class="icon">
+						<div class="flag italy"></div>
+					</a>
+					<a href="./index.html" class="icon">
+						<div class="flag the-united-kingdom"></div>
+					</a>   
+				</div>
             </div>
         </div>
 
         <!-- Body -->
-        <div style="margin: 50px auto; max-width: 800px; padding: 16px;">
+        <div style="margin: 50px auto; max-width: 900px; padding: 16px;">
+			<img src="./assets/Napul_ETH_logo.png" style="margin-top: 30px;"/>
 
-            <pre class="ascii">
-                 ___           ___           ___         ___                        ___           ___           ___     
-                /\  \         /\  \         /\  \       /\  \                      /\  \         /\  \         /\__\    
-                \:\  \       /::\  \       /::\  \      \:\  \                    /::\  \        \:\  \       /:/  /    
-                 \:\  \     /:/\:\  \     /:/\:\__\      \:\  \                  /:/\:\  \        \:\  \     /:/__/     
-             _____\:\  \   /:/ /::\  \   /:/ /:/  /  ___  \:\  \   ___     ___  /::\~\:\  \       /::\  \   /::\  \ ___ 
-            /::::::::\__\ /:/_/:/\:\__\ /:/_/:/  /  /\  \  \:\__\ /\  \   /\__\/:/\:\ \:\__\     /:/\:\__\ /:/\:\  /\__\
-            \:\~~\~~\/__/ \:\/:/  \/__/ \:\/:/  /   \:\  \ /:/  / \:\  \ /:/  /\:\~\:\ \/__/    /:/  \/__/ \/__\:\/:/  /
-             \:\  \        \::/__/       \::/__/     \:\  /:/  /   \:\  /:/  /  \:\ \:\__\     /:/  /           \::/  / 
-              \:\  \        \:\  \        \:\  \      \:\/:/  /     \:\/:/  /    \:\ \/__/     \/__/            /:/  /  
-               \:\__\        \:\__\        \:\__\      \::/  /       \::/  /      \:\__\                       /:/  /   
-                \/__/         \/__/         \/__/       \/__/         \/__/        \/__/                       \/__/    
-            </pre>
-            
-            <p>Benvenuti nel sito della community crypto di Napoli, che a noi piace chiamare <code>NapulETH</code>.</p>
+            <p style="font-size: 50px; font-family: tan-pearl; text-align: center;">NapulETH</p>
+			<h1 style="text-align: center;">OPEN VILLAGE 2024</h1>
+            <p>Il vero evento di onboarding a prezzi accessibili nel cuore della cittadina di Napoli arriverà a settembre!</p>
 
-            <h1>Annuncio importante!</h1>
-            
-                <b>
-                    Siamo molto orgogliosi di annunciare che la seconda edizione di <a href="https://naples.spaghett-eth.com/">spaghett-eth</a> si terrà a Napoli! Al momento stiamo collaborando con la community e il team di spaghett-eth e ce la stiamo mettendo tutta per darvi la migliore esperienza possibile nella nostra città. Qui trovate qualche informazione utile:
+                
+				<h2>Cosa ci sarà?</h2>
                     <ul>
-                        <li><a href="https://naples.spaghett-eth.com/">Link ufficiale dell'evento</a></li>
-                        <li>Dove: Napoli, alla <a href="https://www.foqusnapoli.it/">Fondazione Foqus</a></li>
-                        <li>Quando: 24-26 Maggio 2023</li>
-                        <li>Tema: <a href="https://medium.com/p/32398a7b08a5/"><code>raWstories</code></a>, ovvero racconti dalle 'crypto-trincee'</li>
-                        <li>È possibile applicare come:
-                            <ul>
-                                <li>Speaker, se volete dare un talk. Linee guida approssimative per i talk si possono trovare <a href="https://hackmd.io/-8y81FLzQQeZZ25r_1_HPQ?view">qui</a>.</li>
-                                <li>Volontario, se vuoi aiutarci a durante l'evento. In questo caso il ticket è omaggio. È richiesto il saper parlare inglese fluentemente.</li>
-                                <li>Partner, se vuoi diffondere il tuo progetto e nel contempo aiutarci o finanziariamente o con una partecipazione materiale.</li>
-                            </ul>
+                        <li>Corsi crypto</li>
+                        <li>Community in crescita</li>
+                        <li>Workshops entry-level per i neofiti assoluti</li> 
+						<li>Mini-corsi introduttivi al web3 development</li> 
+						<li>Art-camps per rendere la comunità locale di artisti NFT-abled</li>
+						<li>Hackaton</li>
+						<li>Networking</li>						
+                        <li>Pizza e aperitivo</li>
+						<li>E tanto altro!</li>
                     </ul>
-                </b>
-
-            <h2>Info</h2>
-                <code>NapulETH</code> è il posto per tutte le compagnie, i professionisti e gli hobbysti crypto che vivono, lavorano o semplicemente sentono di avere una relazione con la città di Napoli. Come community, organizziamo eventi ed incontri di persona, periodicamente.
-            <h2>Progetti</h2>
-                I progetti che seguono sono basati a Napoli o hanno membri dei loro rispettivi team nati o che lavorano a Napoli.
-                <ul>
-                    <li><a href="https://20squares.xyz">20squares</a></li>
-                    <li><a href="https://instagram.com/cryptofluxeducation?igshid=YmMyMTA2M2Y=">Crypto FLUX</a></li>
-                    <li><a href="https://decripto.org">decripto</a></li>
-                    <li><a href="https://napoliblockchain.it/">Napoli Blockchain</a></li>
-                    <li><a href="https://pizzawallet.io/">Pizzawallet</a></li>
-                </ul>
-
-            <h2>Amici</h2>
-                Ci consideriamo amici delle seguenti comunità:
-                <ul>
-                    <li><a href="https://www.spaghett-eth.com/">SpaghettETH</a></li>
-                    <li><a href="https://ethereum.foundation/">Ethereum Foundation</a></li>
-                    <li><a href="https://www.thesparkhub.it/">The Spark Creative Hub</a></li>
-                    <li><a href="https://spaziotra.xyz/">Spazio TRA</a></li>
-                </ul>
             
-            <h2>Contatti</h2>
-                <ul>
-                    <li>Iscriviti al nostro <a href="https://t.me/napuleth">gruppo Telegram</a></li>
-                    <li>Seguici su <a href="https://twitter.com/napuleth">Twitter</a></li>
-                    <li>Contatta alcuni dei nostri membri direttamente
-                        <ul>
-                            <li>fabrizio [chiocciola] 20squares [punto] xyz</li>
-                        </ul>
-                    </li>
-                </ul>
-
-
-            <pre class="ascii">
-
-
-                                                                      .(@@@@@@@&(
-                                             (@@@@@@#            #@@@@@@&*   *@@@@@@.
-                                         &@@@@@@@,,   ,@@@&&@@@@@,.                ,@@@%
-                                     @@@@@@                                            .@@@
-                                  #@@@/                                                     @@@,
-                               @@@&                                                             ,@@@,
-                          *@@@#                                                                       #@@@*
-                     /@@@,                                                                                   (@@@@//
-               (@@@/                                                                                               /////////
-                                                                         &&&&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@%............. 
-                                          ****@@@@@@@@@@@@@@@@@@@@@@@@@@###########
-                              ((%@@@@@////
-                        %@@@@*
-                    %@@@,
-                #@@@@
-              .@@@@@@
-                &@@@@@@@@.
-                    #@@@@@@@@@@@%
-                          *#@@@@@@@@@@@@@@//
-                                     ./(@@@@@@@@@@@@@@@@@((
-                                                   .,,@@@@@@@@@@@@@@@@@%%.
-                                                                      ...&@@@@@@@@@@@@@@@&&%
-                                                                                         @@@@@@@@@@@@@@@@@@@#
-                                                                                                               , &@@@@@@@@@@@@@*
-           </pre>
+			<h1 style="text-align: center;">NFTickets in arrivo!</h1>
+			<img src="./assets/VERTICATS.png" style="width: 100%"/>
+			<!-- <div class="applies"> -->
+				<!-- <div class="footerDiv"> -->
+					<!-- <img src="./assets/EDU.png" /> -->
+					<!-- <h3>EDU</h3>			 -->
+				<!-- </div> -->
+				<!-- <div class="footerDiv"> -->
+					<!-- <img src="./assets/NFT.png" /> -->
+					<!-- <h3>ART/NFT</h3>				 -->
+				<!-- </div> -->
+				<!-- <div class="footerDiv"> -->
+					<!-- <img src="./assets/LAW.png" /> -->
+					<!-- <h3>LAW</h3>				 -->
+				<!-- </div> -->
+				<!-- <div class="footerDiv"> -->
+					<!-- <img src="./assets/DEFI.png" /> -->
+					<!-- <h3>DEFI/TOOLING</h3>		 -->
+				<!-- </div>					 -->
+				<!-- <div class="footerDiv"> -->
+					<!-- <img src="./assets/PUBLIC.png" /> -->
+					<!-- <h3>PUBLIC GOODS</h3> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			
+			
+				
+			<p>Se sei interessato resta sintonizzato per essere aggiornato sui prossimi sviluppi o contatta il nostro team se non puoi aspettare.<p>
+            
+			<p>Per maggiori informazioni consulta il pitch deck<p>
+			
+			<a href="./PITCHDECK NapulETH 2024 def.pdf" target="_blank" rel="noopener noreferrer" class="navAdress" style="padding: unset;">
+				<div class="apply" style="display: block;">
+					<b><p>Visualizza Pitch Deck</p></b>
+				</div>	
+			</a>
+			
+			<h1 style="text-align: center;">Unisciti a noi</h1>
+			<div class="applies">
+			
+				<div class="apply">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSebPS1os6-3I58rzMkJ6U8WuYrjUOW-JCS0x5zwUyN-5WVTIQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="navAdress">
+					<b><p style="text-align: center;">Applica come Speaker</p></b>
+				</a>
+				</div>				
+			
+				<div class="apply">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSe3xQnG0J07EjzZk6JgFJP-udLBY80XlE89X_gnz08Mhxm7_Q/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="navAdress">
+					<b><p style="text-align: center;">Applica come Volontario</p></b>
+					</a>
+				</div>
+				<div class="apply">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSd9V2x7BYFgbbmmbsUJvVlaFVwfNhfL5ImIdHz0S2oc2GRQ6A/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="navAdress">
+					<b><p style="text-align: center;">Applica come Partner</p></b>
+					</a>
+				</div>				
+				<div class="apply">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSduNXY2e1NHhEWNfVyXZ_7oDzNGrl7YIo1UwxDu2VNcDWhvfg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="navAdress">
+					<b><p style="text-align: center;">Applica come Sponsor</p></b>
+					</a>
+				</div>				
+				<div class="apply">
+				<a href="https://docs.google.com/forms/d/1ShZxW94AySjFAm2DjTkWVDxgBHb5U2UbnaLZqN7qQQ8/edit" target="_blank" rel="noopener noreferrer" class="navAdress">
+					<b><p style="text-align: center;">Applica come Artista</p></b>
+					</a>
+				</div>
+			</div>
+			
+			<h1 style="text-align: center; font-size: 25px;">Powered by ARCA Studio</h1>			
+			<a href="https://www.arcastudio.org/" target="_blank" rel="noopener noreferrer" style="text-align: center;">
+				<img src="./assets/ARCA STUDIO.png" style="width: 50%;"/>
+			</a>
+			
         </div>
+		<img src="./assets/casarelle.png" style="width: 100%;">
+
+		<footer>
+			
+			<div class="footerDiv">
+				<h2>Progetti</h2>
+                    <a href="https://20squares.xyz" target="_blank" rel="noopener noreferrer" class="navAdress">20squares</a>
+                    <a href="https://decripto.org" target="_blank" rel="noopener noreferrer" class="navAdress">decripto</a>
+                    <a href="https://napoliblockchain.it/" target="_blank" rel="noopener noreferrer" class="navAdress">Napoli Blockchain</a>
+                    <a href="https://pizzawallet.io/" target="_blank" rel="noopener noreferrer" class="navAdress">Pizzawallet</a>
+			</div>
+			<div class="footerDiv">
+				<h2>Amici</h2>
+                    <a href="https://www.spaghett-eth.com/" target="_blank" rel="noopener noreferrer" class="navAdress">SpaghettETH</a>
+                    <a href="https://ethereum.foundation/" target="_blank" rel="noopener noreferrer" class="navAdress">Ethereum Foundation</a>
+                    <a href="https://www.thesparkhub.it/" target="_blank" rel="noopener noreferrer" class="navAdress">The Spark Creative Hub</a>
+                    <a href="https://spaziotra.xyz/" target="_blank" rel="noopener noreferrer" class="navAdress">Spazio TRA</a>
+			</div>
+			<div class="footerDiv">
+				<h2>Social</h2>
+				<a href="https://t.me/napuleth" target="_blank" rel="noopener noreferrer" class="navAdress">
+					Telegram
+				</a>
+				<a href="https://twitter.com/napuleth" target="_blank" rel="noopener noreferrer" class="navAdress">
+					Twitter
+				</a>
+				<a href="https://www.linkedin.com/company/napul-eth/" target="_blank" rel="noopener noreferrer" class="navAdress">
+					LinkedIn
+				</a>
+			</div>
+			<div class="footerDiv" style="align-self: center">
+				<b style="margin-top: 20px;">Per ulteriori info contatta:</b>
+				<a href="mailto:fabrizio@20squares.xyz?subject=NapulETH Info" class="navAdress">
+					fabrizio@20squares.xyz
+				</a>
+				<a href="mailto:andrea.napuleth@gmail.com?subject=NapulETH Info" class="navAdress">
+					andrea.napuleth@gmail.com
+				</a>
+			</div>
+			<img src="./assets/supercat.png" style="width: 250px;">
+		</footer>
     </body>
 </html>
