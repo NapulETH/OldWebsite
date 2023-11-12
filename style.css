@@ -1,14 +1,16 @@
 @font-face {
   font-family: tan-pearl;
   src: url('./fonts/TAN-PEARL.woff');
+  font-display: swap;
 }
 @font-face {
   font-family: cooper-black;
   src: url('./fonts/cooper-black-webfont.woff');
+  font-display: swap;
 }
 
 body {
-    background-image: url('./assets/background.png');
+    background-image: url('./assets/background.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
