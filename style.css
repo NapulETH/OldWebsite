@@ -1,10 +1,12 @@
 @font-face {
   font-family: tan-pearl;
   src: url('./fonts/TAN-PEARL.woff');
+  font-display: swap;
 }
 @font-face {
   font-family: cooper-black;
   src: url('./fonts/cooper-black-webfont.woff');
+  font-display: swap;
 }
 
 body {
