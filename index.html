@@ -6,9 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="description" content="Join NapulEth Open Village 2024 and discover a unique event that aims to bring new faces to the Ethereum ecosystem with real incentives. Join us for entry-level workshops, mini-courses on web3, NFT art-camps, hackathons and more. Innovation is waiting for you!">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="./style.css">
         <title>NapulETH</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     </head>
 
     <body>
@@ -21,6 +21,12 @@
 				<a href="./index.html" class="navAdress" style="color: #ca75ab;">
 					Home
 				</a>		
+				<a href="./apply-ita.html" class="navAdress">
+					Tickets
+				</a>
+				<a href="#applyAnchor" class="navAdress">
+					Apply
+				</a>			 
 				<a href="./about.html" class="navAdress">
 					About us
 				</a>
@@ -35,6 +41,50 @@
 			</div>
 		</div>
 
+		<div>
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+			  <span></span>
+			</label>
+		
+			<ul class="menu__box">
+				<li class="menu__item"><a style="color: #ca75ab;" href="./index.html" class="navAdress">
+					Home
+				</a></li>
+				<li class="menu__item"><a href="./apply-ita.html" class="navAdress">
+					Tickets
+				</a></li>
+				<li class="menu__item"><a href="#applyAnchor" class="navAdress">
+					Apply
+				</a></li>			 
+				<li class="menu__item"><a href="./about.html" class="navAdress">
+					About us
+				</a></li>
+				<li class="menu__item">
+					<div style="margin: 10px; align-self: center;">
+						<a href="./index-ita.html" class="icon" style="float: inline-start;">
+							<div class="flag italy"></div>
+						</a>
+						<a href="./index.html" class="icon" style="float: inline-start;">
+							<div class="flag the-united-kingdom"></div>
+						</a>   
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			//script per prevenire lo scorrimento della pagina quando si clicca sull'hamburger menu
+			document.addEventListener('DOMContentLoaded', function() {
+				var menuToggle = document.getElementById('menu__toggle');
+				var menuBtn = document.querySelector('.menu__btn');
+			
+				menuBtn.addEventListener('click', function(event) {
+					event.preventDefault();
+					menuToggle.checked = !menuToggle.checked;
+				});
+			});
+		</script>
+
         <!-- Body -->
         <div style="margin: 50px auto; max-width: 900px; padding: 16px;">
 			<img src="./assets/Napul_ETH_logo.webp" alt= "NapulETH logo" style="margin-top: 30px; display: block;
@@ -42,43 +92,116 @@
 			margin-right: auto;
 			width: 30%;"/>
 
-            <p style="font-size: 50px; font-family: tan-pearl; text-align: center;">NapulETH</p>
+			<p style="font-size: 50px; font-family: tan-pearl; text-align: center;">NapulETH</p>
 			<h1 style="text-align: center;">OPEN VILLAGE 2024</h1>
-			
-			<p>In the Ethereum ecosystem, everyone is constantly talking about <b>onboarding</b> for the masses, but at conferences, it's always the <b>same faces</b>: the marketing officer of that project, the lead developer of another project, the head ambassador of yet another project. All these individuals are obviously already onboarded, and as meaningful and interesting as their experiences may be to share, a conference filled only with them risks turning into an <b>echo chamber</b> where everyone is just echoing each other.</p>
-			<p>We believe that this loop can't be broken without offering a <b>real incentive</b> for those not yet familiar with web3 to participate in significant events.</p>
-			<p>In short, the issue we aim to address is to bring <b>actually new faces</b> into the Ethereum ecosystem. We are convinced that this can only be achieved by creating <b>events</b> that are both <b>accessible and high-profile</b>. If you think the same, <b>NapulEth Open Village</b> is waiting for you...</p>
+			<h1 style="text-align: center;">12/13/14 September</h1>
+			<p style="text-align: center;">Powered by</p>
+			<div style="display: flex; justify-content: center;">
+				<img src="./assets/Napoli-Logo.webp" alt= "Napoli logo" style="display: inline; width: 17%;"/>
+			</div>
+			<br/>
+			<div style="display: flex; justify-content: center;">
+				<a href="./Pitchdeck NapulETH 2024E.pdf" target="_blank" rel="noopener noreferrer" class="navAdress" style="padding: unset; ">
+					<div class="apply" style="font-size: 20px; margin: 50px; width: 165px; height: 55px;">
+						<b><p>Pitch Deck</p></b>
+					</div>	
+				</a>
+			</div>
+			<br/>
+			<div class="card">
+				<p>In the Ethereum ecosystem, everyone is constantly talking about <b>onboarding</b> for the masses, but at conferences, it's always the <b>same faces</b>: the marketing officer of that project, the lead developer of another project, the head ambassador of yet another project. All these individuals are obviously already onboarded, and as meaningful and interesting as their experiences may be to share, a conference filled only with them risks turning into an <b>echo chamber</b> where everyone is just echoing each other.</p>
+
+				<p>We believe that this loop can't be broken without offering a <b>real incentive</b> for those not yet familiar with web3 to participate in significant events.</p>
+
+				<p>In short, the issue we aim to address is to bring <b>actually new faces</b> into the Ethereum ecosystem. We are convinced that this can only be achieved by creating <b>events</b> that are both <b>accessible and high-profile</b>. If you think the same, <b>NapulEth Open Village</b> is waiting for you...</p>
+			</div>
 			<br/>
 
-			<div id="info" style="text-align: center">
-				<h2>What will be there?</h2>
-				<p>Entry-level workshops for absolute beginners</p> 
-				<p>Introductory mini-courses to web3 development</p> 
-				<p>Art-camps to make the local community of artists NFT-abled</p>
-				<p>Hackathons</p>
-				<p>Networking</p>						
-				<p>Talks</p>					
-				<p>Pizza and drinks</p>
-				<p>And much more!</p>
+			<br/>
+			<div id="where" style="text-align: center;">
+				<h2>Where?</h2>
+				<p>Monumental Complex of Santa Maria la Nova in Naples, where the infamous Count Dracula is thought to be buried.</p> 
 			</div>
 
-			
-			<a href="./PITCHDECK NapulETH 2024 def.pdf" target="_blank" rel="noopener noreferrer" class="navAdress" style="padding: unset; ">
-				<div class="apply" style="display: block; margin: 50px 100px;">
-					<b><p>View Pitch Deck</p></b>
-				</div>	
-			</a>
-			<br/><br/>
-			<h1 style="text-align: center;">NFTickets coming soon!</h1>
-			
-			<!-- <div style="text-align: center;">
-				Owners of a 
-				<img src="./assets/KATW COLLECTION.webp" alt="KATW_logo" style="width: 70px; display: inline-block;"/>
-				will have access to the entire conference
-			</div> -->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <img style="width: 45%; height: auto; border: 3px solid #ca75ab; vertical-align: middle; border-radius: 10px;" src="./assets/img2.webp" alt="Santa Maria la Nova"/>
+				</div>
+				<div class="mySlides fade">
+				  <img style="width: 45%; height: auto; border: 3px solid #ca75ab; vertical-align: middle; border-radius: 10px;" src="./assets/img3.webp" alt="Santa Maria la Nova"/>
+				</div>
+				<div class="mySlides fade">
+				  <img style="width: 45%; height: auto; border: 3px solid #ca75ab; vertical-align: middle; border-radius: 10px;" src="./assets/img4.webp" alt="Santa Maria la Nova"/>
+				</div>
+				<div class="mySlides fade">
+				  <img style="width: 45%; height: auto; border: 3px solid #ca75ab; vertical-align: middle; border-radius: 10px;" src="./assets/dracula-tomb.webp" alt="Santa Maria la Nova"/>
+				</div>
+				<div class="mySlides fade">
+				  <img style="width: 45%; height: auto; border: 3px solid #ca75ab; vertical-align: middle; border-radius: 10px;" src="./assets/Santa-Maria-inside.webp" alt="Santa Maria la Nova"/>
+				</div>
+
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				  <span class="dot" onclick="currentSlide(5)"></span> 
+				</div>
+				
+				<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "flex";  
+				  slides[slideIndex-1].style.justifyContent = "center";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+
+			<br/>
+			<div id="info" class="card" style="text-align: center; padding-bottom: 20px;">
+				<h2>What will be there?</h2>
+				<li>Entry-level workshops for absolute beginners</li> 
+				<li>Introductory mini-courses to web3 development</li> 
+				<li>Art-camps to make the local community of artists NFT-abled</li>
+				<li>ITALIAN START UP CHALLENGE</li>
+				<li>Networking</li>						
+				<li>Talks</li>					
+				<li>Pizza and drinks</li>
+				<li>And much more!</li>
+			</div>
+
 			<br/><br/><br/>
-			<img src="./assets/VERTICATS.webp" alt="Event verticals" style="width: 100%"/>
-			<br/><br/><br/>
+			<img src="./assets/verticals.webp" alt="Event verticals" style="width: 100%"/>
+			<br/><br id="applyAnchor"/><br/>
 			<h1 style="text-align: center;">Join Us</h1>
 			<div class="applies">
 			
@@ -103,11 +226,7 @@
 					<b><p style="text-align: center;">Apply as Sponsor</p></b>
 					</a>
 				</div>				
-				<div class="apply">
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSc1afwbwDKUP7iTyXUlEWJr2B-DSEhCR9wyD8dM78StNaIluw/viewform" target="_blank" rel="noopener noreferrer" class="navAdress">
-					<b><p style="text-align: center;">Apply as Artist</p></b>
-					</a>
-				</div>
+
 			</div>
 			<br/><br/><br/>
 			<h1 style="text-align: center;">Sponsor</h1>
@@ -300,14 +419,7 @@
 					</a>
 				</p>
 			</div>
-			
-			<div class="footerDiv">
-				<p style="text-align: center;">Powered by 
-					<a href="https://www.arcastudio.org/" target="_blank" rel="noopener noreferrer" class="navAdress">
-						ARCA Studio
-					</a>
-				</p>		
-			</div>
+
 		</footer>
     </body>
 </html>
