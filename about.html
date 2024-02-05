@@ -22,9 +22,12 @@
 				<a href="./index.html" class="navAdress" >
 					Home
 				</a>
-				<!-- <a href="./events-ita.html" class="navAdress"> -->
-					<!-- Eventi Passati -->
-				<!-- </a>			 -->
+				<a href="./apply-ita.html" class="navAdress">
+					Tickets
+				</a>
+				<a href="./index.html#applyAnchor" class="navAdress">
+					Apply
+				</a>		
 				<a href="./about.html" class="navAdress" style="color: #ca75ab;">
 					About Us
 				</a>
@@ -39,13 +42,63 @@
 			</div>
 		</div>
 
+		<div>
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+			  <span></span>
+			</label>
+		
+			<ul class="menu__box">
+				<li class="menu__item"><a href="./index.html" class="navAdress">
+					Home
+				</a></li>
+				<li class="menu__item"><a href="./apply-ita.html" class="navAdress">
+					Tickets
+				</a></li>
+				<li class="menu__item"><a href="./index.html#applyAnchor" class="navAdress">
+					Apply
+				</a></li>			 
+				<li class="menu__item"><a style="color: #ca75ab;" href="./about.html" class="navAdress">
+					About us
+				</a></li>
+				<li class="menu__item">
+					<div style="margin: 10px; align-self: center;">
+						<a href="./index-ita.html" class="icon" style="float: inline-start;">
+							<div class="flag italy"></div>
+						</a>
+						<a href="./index.html" class="icon" style="float: inline-start;">
+							<div class="flag the-united-kingdom"></div>
+						</a>   
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			//script per prevenire lo scorrimento della pagina quando si clicca sull'hamburger menu
+			document.addEventListener('DOMContentLoaded', function() {
+				var menuToggle = document.getElementById('menu__toggle');
+				var menuBtn = document.querySelector('.menu__btn');
+			
+				menuBtn.addEventListener('click', function(event) {
+					event.preventDefault();
+					menuToggle.checked = !menuToggle.checked;
+				});
+			});
+		</script>
+
         <!-- Body -->
         <div style="margin: 50px auto; max-width: 900px; padding: 16px;">
 
 
             <h2>Info</h2>
-                <code>NapulETH</code> is the place for all crypto companies, professionals, and hobbyists who live, work, or simply feel they have a relationship with the city of Naples. As a community, we organize events and in-person meetings periodically.
+            <code>NapulETH</code> is the place for all crypto companies, professionals, and hobbyists who live, work, or simply feel they have a relationship with the city of Naples. As a community, we organize events and in-person meetings periodically.
 				
+			<h2>The Team</h2>
+			<img src="./assets/team1.webp" alt="team photo" style="width: 100%"/>
+			<img src="./assets/team2.webp" alt="team photo" style="width: 100%"/>
+			<div style="display: flex; justify-content: center;">
+				<img src="./assets/Illustrator.webp" alt="Illustrator photo" style="width: 45%"/>
+			</div>
 			<h2>Projects affiliated with NapulETH</h2>
 			<ul>
 				<li><a href="https://20squares.xyz" target="_blank" rel="noopener noreferrer" class="navAdress">20squares</a></li>
@@ -86,14 +139,7 @@
 					</a>
 				</p>
 			</div>
-			
-			<div class="footerDiv">
-				<p style="text-align: center;">Powered by 
-					<a href="https://www.arcastudio.org/" target="_blank" rel="noopener noreferrer" class="navAdress">
-						ARCA Studio
-					</a>
-				</p>		
-			</div>
+		
 		</footer>
     </body>
 </html>
