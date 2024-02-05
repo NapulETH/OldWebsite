@@ -176,7 +176,7 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Definisce la larghezza delle celle e altri parametri */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Definisce la larghezza delle celle e altri parametri */
     gap: 20px; /* Spazio tra gli elementi della griglia */
     justify-content: center;
     padding: 20px; /* Spazio intorno all'intera griglia */
